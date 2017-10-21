@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400');
+@keyframes fadein{from{opacity:0;}to{opacity:1;}}@-moz-keyframes fadein{from{opacity:0;}to{opacity:1;}}@-webkit-keyframes fadein{from{opacity:0;}to{opacity:1;}}@-o-keyframes fadein{from{opacity:0;}to{opacity:1;}}
+
+body{
+  margin: 0;
+  padding: 0;
+  animation:fadein 1.0s;-moz-animation:fadein 1.0s;-webkit-animation:fadein 1.0s;
+}
+
+.background-container h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10rem;
+  border: 8px dashed white;
+  border-radius: 3px;
+  font-weight: 200;
+  position: relative;
+  width: 600px;
+  top: 5rem;
+  margin: auto;
+  
+}
+
+.background-container {
+  width: 100%;
+  height: 40rem;
+  background-image: url("trails-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  
+}
+
+.map-container {
+  width: 90%;
+  margin: auto;
+  
+}
+.map-container iframe {
+  border: 3px solid white;
+  border-radius: 8px;
+  width: 100%;
+  height: 500px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+ 
+}
+
+iframe:hover {
+  opacity: 1;
+}
+
+.text-container p {
+  font-size: 40px;
+  color: #999;
+  position: relative;
+  width: 60%;
+  
+ 
+}
+
+.text-container {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  height: 100px;
+  width: 100%;
+  background-image: url("trails-background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}

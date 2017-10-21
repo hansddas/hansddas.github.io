@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+@keyframes fadein{from{opacity:0;}to{opacity:1;}}@-moz-keyframes fadein{from{opacity:0;}to{opacity:1;}}@-webkit-keyframes fadein{from{opacity:0;}to{opacity:1;}}@-o-keyframes fadein{from{opacity:0;}to{opacity:1;}}
+
+
+                                                                /*SPINNER section start*/
+
+#sk-folding-cube {
+  margin: 20rem auto;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+		
+}
+
+#sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+#sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+#sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+		  
+}
+#sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+#sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+#sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+#sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+#sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+                                                          /*SPINNER section end*/
+
+
+html{
+  font-size: 16px;
+}
+
+body{
+  margin: 0;
+  padding: 0;	
+}
+
+.animate-bottom {
+  position: relative;
+  animation:fadein 1.0s;-moz-animation:fadein 1.0s;-webkit-animation:fadein 1.0s;
+}
+                                                            /*banner+background section start*/
+.background-container {
+  width: 100%;
+  overflow: auto;
+  background-image: url("./dhwall2.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-attachment: fixed;
+}
+
+.titel{
+  width: 90%;
+  text-align: right;
+
+}
+
+.titel #banner{
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 14rem;
+  color: #FFF;
+  opacity: 0.8;
+  margin-top: 35rem;
+  margin-bottom: 3rem;
+}
+                                                            /*banner+background section end*/
+
+                                                            /*text section start*/
+.Text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+}
+
+ .Text p{
+  color: gray;
+  font-size: 40px;
+  text-align: center;	
+  width: 60%;
+  position: relative;
+  background-color: white;
+}
+                                                            /*text section end*/
+
+                                                            /*navigation section start*/
+nav {
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  position: fixed;
+  top: 2rem;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  min-width: 800px;
+}
+
+.navi{
+  padding: 0 30px;
+}
+
+ nav a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+}
+                                                            /*navigation section end*/
+
+                                                            /*footer section start*/
+footer {
+  border-top: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #FFF;
+}
+
+footer a {
+
+  border: 1px solid red;
+  border-radius: 3px;
+  color: black;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+footer a:hover {
+  color: white;
+  background-color: red;
+  border: 1px solid white;
+}
+                                                            /*footer section end*/
+
+                                                          /*smartphone section start*/
+@media only screen and (orientation: portrait) {
+	
+.titel{
+  width: 95%;
+  text-align: center;
+  margin-top: 35rem;
+}
+
+.titel #banner{
+  position: relative;
+  top: -30rem;
+  font-size: 20rem;
+  }
+
+.background-container {
+  width: 100%;
+  overflow: auto;
+  background-image: url("dhwall2small.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-attachment: fixed;	
+}
+  
+nav {
+  display: none;
+}
+  
+.Text p {
+  font-size: 4rem;
+  width: 90%;
+  }
+
+footer a{
+  font-size: 3rem;    
+  }
+
+}
+                                                          /*smartphone section end*/
